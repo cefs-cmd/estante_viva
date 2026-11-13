@@ -1,20 +1,29 @@
-<style>
 
         body{
         font-family: 'Open Sans', sans-serif;
-        }
+        box-sizing: border-box;
 
+        min-height: 100vh; 
+        margin: 0;
+        padding: 0;
+
+        display: flex;
+        flex-direction: column;
+
+        }
          nav{
-            border: 1px solid #245C46;
-            padding: 0 0 0 40px;
+            border: 2px solid;
+            padding: 0 0 0 30px;
             display: flex;
             align-items: center;
             background-color: #EEEEEE;
+    
         }
 
         nav h2{
             font-size: 25px;
         }
+
 
         .inicio{
         gap: 10px;
@@ -27,65 +36,177 @@
         }
 
         h1{
-            padding: 0 0 0 40px;
+            padding: 0 0 0 30px;
         }
 
         /*Painel de cadastro*/
         form{
-            border: 1px solid #245C46;
-            background-color: #EEEEEE;
-            padding: 0 0 0 40px;
-            width: 1020px;
-            height: 190px;
-            display: flex;
+            border: 2px solid;
+
+            height: 260px;
+            margin: 0 40px;
+            padding: 0 40px;
         }
 
-        form input {
-            width: 270px;
-            height: 30px;
-            border: 1px solid #245C46;
+        .primeiro-cadastro{
+            display: grid;
+
+            grid-template-columns: 1.5fr 0.8fr;
+
+            gap: 24px;
+
+            margin-top: 16px;
         }
 
-        .titulo {
-            width: 500px;
-            height: 30px;
+        .segundo-cadastro{
+            display: grid;
+
+            grid-template-columns: 1fr 1fr 1fr;
+
+            gap: 24px;
+
+            margin-top: 20px;
+
+            align-items: end;
+
         }
 
-        input::placeholder {
-            padding: 0 0 0 10px;
-            color: #302e2e;
-        }
+        .campo {
+             display: flex;
+            flex-direction: column;
+            gap: 5px;
+            }
+
+        input{
+                border: 2px solid;
+                height: 30px;
+            }
 
         .titulo-cadastro{
-            display: flex;
-            flex-direction: column;
-
-        }
-
+                height: 30px;
+            }
 
         .cadastrar-button{
-            padding: 8px 80px 8px 10px;
+                cursor: pointer;
+                height: 35px;
+                border: 2px solid;
+            }
+        
+        input::placeholder{
+            color: #4d504f;
         }
 
+        main{
+            flex: 1;
+            padding: 0 40px;
+        }
+
+        h4{
+            font-size: 20px;
+            padding: 0 40px;
+        }
 
         .buscar {
-            border: 1px solid #245C46;
-            width: 500px;
+            margin-left: 40px;
+
+            width: 1455px;
             height: 35px;
         }
 
+        .barra-pesquisa{
+            display: grid;
+
+            grid-template-columns: 1.5fr 1fr 1fr;
+
+            margin-top: -15px;
+        }
+
+        .button-pesquisa{
+            display: flex;
+        }
+
+        .pesquisar{
+            cursor: pointer;
+
+
+            border: 2px solid;
+
+
+            padding: 0 70px 0 0 ;
+            width: 140px;
+            height: 40px;
+            margin-left: 10px;
+        }
+
+         .limpar{
+            cursor: pointer;
+
+
+            border: 2px solid;
+
+
+            padding: 0 70px 0 0 ;
+            width: 140px;
+            height: 40px;
+            margin-left: 10px;
+        }
+
+
+        table{
+        margin-top: 20px;
+        margin-left: 40px;
+
+        width: 1765px;
+        border-collapse: collapse;
+        border: 1px solid #888;
+        }
+
+        th{
+        background-color: #EEEEEE;
+        color: black;
+
+        padding: 10px;
+        text-align: left;
+        font-weight: bold;
     
+        }
+
+        td{
+        padding: 10px;
+        border-top: 1px solid #888;
+        font-size: 13px;
+        }
+
+        .edit{
+            cursor: pointer;
+            padding: 10px 40px 8px 10px;
+        }
+
+        footer{
+           
+        
+            text-align: center;
+
+            border: 2px solid;
+
+            background-color: #EEEEEE;
+
+            padding: 20px;
+
+        }
 
 
+        
+        
 
-
-
-
-
-    
 
 
 
 
         
-    </style>
+
+        
+
+
+
+        
