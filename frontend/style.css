@@ -45,6 +45,8 @@ form {
     border: 2px solid black;
     border-radius: 5px;
 
+    background-color: whitesmoke;
+
     height: 260px;
     margin: 0 40px;
     padding: 0 40px;
@@ -81,7 +83,7 @@ form {
 }
 
 input {
-    border: 2px solid #4d504f;
+    border: 1px solid black;
     height: 30px;
     border-radius: 5px;
 }
@@ -188,6 +190,8 @@ td {
     padding: 10px;
     border-top: 1px solid #888;
     font-size: 13px;
+
+    background-color: whitesmoke;
 }
 
 .edit {
