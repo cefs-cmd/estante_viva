@@ -193,6 +193,12 @@ td {
 .edit {
     cursor: pointer;
     padding: 10px 40px 8px 10px;
+
+    border-radius: 5px;
+    border: 1px solid #0095eb;
+
+    color: #EEEEEE;
+    background-color: #0095eb;
 }
 
 footer {
