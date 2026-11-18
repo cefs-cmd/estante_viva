@@ -13,7 +13,9 @@ body {
 
 nav {
     color: #EEEEEE;
-    padding: 0 0 0 30px;
+
+    padding: 0 0 0 80px;
+
     display: flex;
     align-items: center;
     background-color: #0095eb;
@@ -123,9 +125,9 @@ h4 {
 }
 
 .barra-pesquisa {
-    display: grid;
+    display: flex;
 
-    grid-template-columns: 1.5fr 1fr 1fr;
+    width: 100%;
 
     margin-top: -15px;
 }
@@ -167,13 +169,21 @@ h4 {
 }
 
 
-table {
+.tabela {
     margin-top: 20px;
-    margin-left: 40px;
+    margin: 40px;
+    min-width: 90%;
 
-    width: 1765px;
+
+    display: flex;
+    flex-direction: column;
+
     border-collapse: collapse;
     border: 1px solid #888;
+}
+
+table {
+    border-spacing: 0
 }
 
 th {
