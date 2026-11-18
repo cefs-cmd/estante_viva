@@ -53,8 +53,8 @@ function addBookTable(book) {
     <td>${autor}</td>
     <td>${preco}</td>
     <td>${quantidade}</td>
-    <td><button>Editar</button></td>
-    <td><button>Excluir</button></td>
+    <td class="edit"><button>Editar</button></td>
+    <td class="edit"><button>Excluir</button></td>
     `;
 
     tr.appendChild(tdTitle);
@@ -81,4 +81,46 @@ async function loadbooks() {
         alert("Erro ao cadastrar livros: " + err.message);
     }
 }
+
+//botão de excluir
+
+async function deleteTable(id) {
+    try {
+        const res = await fetch(`${apiUrl}/${id}`, {
+            method: 'DELETE'
+        });
+
+        if (!res.ok) {
+            throw new Error('Erro ao excluir a tabela');
+        }
+
+        loadTasks();
+
+    } catch (err) {
+        alert('Erro ao excluir a tabela: ' + err.message);
+    }
+}
+
+// editar botão
+
+async function editTable(id) {
+    try {
+        const res = await fetch(`${apiUrl}/${id}`, {
+            method: 'PUT'
+        });
+
+        if (!res.ok) {
+            throw new Error('Erro ao editar a tabela');
+        }
+
+        loadTasks();
+
+    } catch (err) {
+        alert('Erro ao editar a tabela: ' + err.message);
+    }
+}
+
+
+
+
 
