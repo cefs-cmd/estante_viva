@@ -227,6 +227,7 @@ footer {
 .cancel-edit {
     color: #eeeeee;
     background-color: red;
+    cursor: pointer;
 }
 
 .message.success {
