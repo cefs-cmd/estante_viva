@@ -1,0 +1,14 @@
+CREATE DATABASE db_estante_viva;
+
+USE db_estante_viva;
+
+CREATE TABLE IF NOT EXISTS tb_livro (
+id_livro INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
+titulo VARCHAR(150) NOT NULL,
+autor VARCHAR(120) NOT NULL,
+preco DECIMAL(10.2) NOT NULL,
+quantidade_estoque INT NOT NULL,
+completed BOOLEAN DEFAULT FALSE
+);
+
+
